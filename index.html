@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+    <title>Profile</title>
+</head>
+<body>
+<!-- Header -->
+<header>
+    <nav>
+        <h1 class="nav-title">Profile</h1>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#" class="active">My Profile</a></li>
+            <li><a href="#">Find Connections</a></li>
+        </ul>
+        <button class="btn">Sign Out</button></nav>
+</header>
+<!-- main -->
+<main>
+    <!-- left -->
+    <div class="leftWrapper">
+        <!-- profile -->
+        <section class="profileContainer">
+            <img class ="user" src="./images/jane-m.jpg" alt="user card">
+            <div class="userContainer">
+                <h1 id = "Profile_name">
+                    Jane Doe
+                </h1>
+                <div class="location">
+                    <img id="map" src="./images/map-marker.png" alt="map" /> 
+                    <h2>Seattle</h2>
+                    
+                </div>
+                <p class="desc"> Developer | Engineer | Problem Solver
+                    <br>
+                    Masters of Shadows and the Internet!    
+                    </p>
+                    <div class="edit">
+                        <img id="gear" src="./images/gear.png" alt="map" /> 
+                        <p id="profile_e" onclick="edit()">edit profile</p>
+                    </div>
+            </div>
+        </section>
+        <!-- education -->
+        <section class="EducationContainer">
+            <div class="eduHead">
+                <h2>Education</h2>
+            </div>
+            <h2 class ="edheading">Coding Dojo - Full Stack Bootcamp</h2>
+            <h3 class="eduDate">Dec 2019 - Mar 2020</h3>
+            <p class='edup'>Triple black belt in Python, MERN and C#...</p>
+        </section>
+    </div>
+    <!-- right -->
+    <div class="rightWrapper">
+        <!-- requests -->
+        <section class="requestsContainer">
+            <div class="requestsHead">
+                <div id="requestsNum"></div>
+                Connection Requests
+            </div>
+            <div class="requests">
+                <img class="smallPic" src="./images/adrien-s.jpg" alt="todd-s">
+                <p class="smallNames"> Adrien D</p>
+                <div class="reqans">
+                    <input type="image" class="ansbtn" id="ansY1" onclick="acceptReq(this.id)" name="accept" src="./images/accept-circle.png" width="20" height="20" alt="accept">  
+    
+                    <input type="image" class="ansbtn" id="ansN1" onclick="declineReq(this.id)" name="decline" src="./images/close-circle.png" width="20" height="20" alt="accept">  
+    
+                </div>
+            </div>
+            <div class="requests">
+                <img class="smallPic" src="./images/phil-s.jpg" alt="phil-k">
+                <p class="smallNames"> Phil K</p>
+                <div class="reqans">
+    
+                    <input type="image" class="ansbtn" id="ansY2" onclick="acceptReq(this.id)" name="accept" src="./images/accept-circle.png" width="20" height="20" alt="accept">  
+    
+                    <input type="image" class="ansbtn"id="ansN2"  onclick="declineReq(this.id)"name="decline" src="./images/close-circle.png" width="20" height="20" alt="accept">  
+                </div>
+            </div>
+        </section>
+        <!-- contacts -->
+        <section class="contactsContainer">
+            <div class="connectshead">
+                <div id="connectsnum"></div>
+                Your Connections
+            </div>
+            
+            <div class="connections">
+                <img class="smallPic" src="./images/adrien-s.jpg" alt="adrien">
+                <p class="smallNames"> Adrien D</p>
+            </div>
+        
+            <div class="connections">
+                <img class="smallPic" src="./images/anne-s.jpg" alt="Anne">
+                <p class="smallNames"> Anne J</p>
+            </div>
+
+            <div class="connections">
+                <img class="smallPic" src="./images/alayne-s.jpg" alt="alayne">
+                <p class="smallNames"> Alayne T</p>
+            </div>
+
+            <div class="connections">
+                <img class="smallPic" src="./images/arry-s.jpg" alt="arry">
+                <p class="smallNames"> Arry Y</p>
+            </div>
+
+            <div class="connectsFoot">View More</div>
+        </section>
+    </div>
+</main>
+
+<script src="/script.js"></script>
+</body>
+</html>

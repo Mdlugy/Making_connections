@@ -1,0 +1,258 @@
+    /* everything */
+*{font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    height: 100hv;
+
+}
+
+    /*  Header and Nav  */
+
+header{
+margin: 0%;
+
+}
+nav{
+    min-height: 7em;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: aliceblue;
+    background-color: rgb(124, 121, 121);
+}
+nav h1{color: rgba(223, 157, 58, 0.699);}
+.nav-links{
+    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links li a{color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: x-large;
+    }
+
+    .nav-links li a:hover{color: rgb(82, 228, 208);
+        text-decoration: none;
+        }
+.nav-links li{
+        font-size: small;
+        list-style-type: none;
+}
+
+
+nav .btn {
+    background-color: #1883c0; 
+    color: rgb(255, 255, 255);
+    border-color: #000000;
+border-style: solid;
+min-height: 2em;
+
+    transition-duration: 0.3s;
+    
+}
+nav .btn:hover {
+    border-color: #000000;
+    background-color: #7c65ce;
+    border-style: solid;
+    font-size: large;
+    min-height: 1.5em;
+    }
+    
+
+    /* under Nav */
+main{
+    width: 100%;
+    padding: 5em;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}
+        /* left side */
+
+.leftWrapper{
+flex: 2;
+padding-top: 3em;
+padding: 2em;
+}
+
+        /* Profile */
+.profileContainer{
+    border: 5px solid rgb(180, 177, 177);
+    background-color: rgb(60, 195, 219);
+    min-height:40em;
+    width: 100%; 
+    padding-top: 10em;
+    position:relative;
+}
+.userContainer{
+    min-height:30em;
+    width: 100%; 
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.966);
+    padding: 5em;
+}
+#Profile_name{position: absolute;
+    top: 1em;
+font-size: xx-large;}
+
+#gear{
+    height: 1em;
+    }
+.location{
+        top: 3em;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap:1em;
+    }
+#map{
+        height: 20px;
+        }    
+.user{
+        border-radius: 50%;
+        height:100px ;
+        width: auto;
+        position: absolute;
+        left: 10px;
+        top: 6em;
+        z-index: 1;
+    } 
+.desc{
+    top:3em;    
+    position: relative;
+
+}
+.edit{
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top: 4em;
+}
+#profile_e{
+    text-decoration: underline;
+    color: blue;
+}
+
+
+        /* education */
+
+.EducationContainer{border: 5px solid rgb(180, 177, 177);
+    margin-top: 20px;
+    min-height: 300px;
+    position: relative;
+    background-color:rgba(255, 228, 196, 0.116)
+    }
+    .eduHead{
+        background-color: #000000;
+        color:white;
+        width: 100%;
+        padding-left: 30px;
+        position: absolute;
+    
+    }
+    .edheading{position: absolute;
+    top: 60px;    padding-left: 30px;}
+    .eduDate{    padding-left: 30px;position: absolute;top: 125px;}
+    .edup{    padding-left: 30px;position: absolute;top: 200px;}
+
+        /* right side */
+.rightWrapper{
+flex: 1;
+padding-top: 3em;
+padding: 2em;
+}
+.smallPic{
+    border-radius: 50%;
+    height: 50px;
+}
+.smallNames{
+    font-size: larger;
+}
+.requests .smallNames{
+    width: 5em;
+}
+.connections .smallNames{
+    width: 10em;
+}
+        /* requests */
+.requestsContainer{
+    position: relative;
+    top: 10em;
+    width:100% ;
+    border: 4px solid rgb(180, 177, 177);
+    background-color: rgba(249, 240, 255, 0.411);
+}
+.requestsHead{
+    background-color: #000000;
+    color:white;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: medium;
+    min-height: 3em; 
+}
+#requestsNum{
+    min-height:2em ;
+    background-color: azure;
+    min-width:2em ;
+    color: #000000;
+    text-align: center;
+    font-size: large;
+    line-height: 2;
+    border-radius: 50%;
+}
+.requests{display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+gap: 10px;}
+.reqans{display: inline-block;}
+.ansbtn{}
+        /* contacts*/
+.contactsContainer{
+    position: relative;
+    top: 20em;
+    width:100% ;
+    border: 4px solid rgb(180, 177, 177);
+    background-color: rgba(249, 240, 255, 0.411);
+}
+.connectshead{
+    background-color: #000000;
+    color:white;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    font-size: medium;
+    min-height: 3em;  }
+#connectsnum{
+    background-color: azure;
+    color: #000000;
+    text-align: center;
+    border-radius: 50%;
+    padding: .2em;}
+
+.connections{
+    display:flex;
+    justify-content: space-between;
+margin: 1em;}
+.connectsFoot{
+    min-height: 2em;
+    position:relative;
+    border-top: 4px solid rgb(180, 177, 177);
+    width: 100%;
+    color: blue;
+    text-decoration: underline;
+    bottom: 0ch;
+    left: 0;
+    padding:0px;
+}
